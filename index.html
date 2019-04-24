@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Source+Sans+Pro:900" rel="stylesheet">
+	<title>AJAX</title>
 </head>
 <body>
+	<form>
+		<label>Name
+			<input class="inputCard" id="name" type="text" autocomplete="off" placeholder="Please Enter Your Name">
+		</label>
+		<label>Age
+			<input class="inputCard" id="age" type="text" placeholder="Please Enter Your Age">
+		</label>
+		<button id="create_user" type="button" class="button">Create user</button>
+		<button id="load_users" type="button" class="button">Load users</button>
+	</form>
+	<div class="container" id='user_cards'></div>
 	
-<script src="js/main.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
